@@ -21,7 +21,6 @@ const links = [
 ];
 
 export default function Sidenav() {
-  const { theme, toggleTheme } = useTheme();
   const pathname = usePathname();
 
   const buttonClasses = `

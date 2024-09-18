@@ -1,5 +1,4 @@
 import BalanceChart from "@/components/Dashboard/BalanceChart";
-import DashboardCard from "@/components/Dashboard/DashboardCard";
 import DashboardExpenseCard from "@/components/Dashboard/DashboardExpenseCard";
 import DashboardIncomeCard from "@/components/Dashboard/DashboardIncomeCard";
 import DashboardTotalAmountCard from "@/components/Dashboard/DashboardTotalAmountCard";
