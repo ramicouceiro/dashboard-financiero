@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
   		colors: {
-  			background: '#ecf0f3',
+  			background: '#e0e0e0',
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
@@ -52,10 +52,11 @@ const config: Config = {
   			}
   		},
   		boxShadow: {
-  			neomorphic: '-14px -14px 30px 0 #fff, 14px 14px 30px 0 #d1d9e6',
-  			neomorphicInset: '0px 0px 0px #c5c5c5, 0px 0px 0px #ffffff, inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff',
-  			neomorphicDark: '15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60)',
-  			neomorphicInsetDark: 'inset 5px 5px 10px #0a0a0a, inset -5px -5px 10px #1e1e1e'
+  			neomorphic: '25px 25px 50px #cecece, -25px -25px 50px #f2f2f2',
+  			neomorphicInset: ' inset 25px 25px 50px #cecece,inset -25px -25px 50px #f2f2f2',
+			neomorphicDark: '15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60)',
+  			neomorphicInsetDark: 'inset 5px 5px 10px #0a0a0a, inset -5px -5px 10px #1e1e1e',
+			neomorphicBtn: '10px 10px 20px #c5c5c5, -10px -10px 20px #fff',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

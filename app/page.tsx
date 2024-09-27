@@ -1,6 +1,6 @@
-import BalanceChart from "@/components/Dashboard/BalanceChart";
 import DashboardExpenseCard from "@/components/Dashboard/DashboardExpenseCard";
 import DashboardIncomeCard from "@/components/Dashboard/DashboardIncomeCard";
+import {DashboardSavingsCard} from "@/components/Dashboard/DashboardSavingsCard";
 import DashboardTotalAmountCard from "@/components/Dashboard/DashboardTotalAmountCard";
 import { Metadata } from "next";
 
@@ -36,26 +36,24 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="p-6 h-screen text-foreground select-none">
       <div className="p-6">
           <h1 className="text-2xl font-bold">Dashboard</h1>
       </div>
       <div className="">
-        <div className="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6">
+        <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
           {/* Tarjeta de Balance Financiero */}
           <DashboardTotalAmountCard className="col-span-1" />
 
           {/* Tarjeta de Ingresos Generales */}
           <DashboardIncomeCard className="col-span-1"/>
-          <DashboardIncomeCard className="col-span-1"/>
-
+          {/* <DashboardIncomeCard className="col-span-1"/> */}
           {/* Tarjeta de Total Insight */}
           <DashboardExpenseCard className="col-span-1"/>
 
-          <BalanceChart className="col-span-2"/>
-          <BalanceChart className="col-span-2"/>
+          <DashboardSavingsCard className="row-span-2 col-span-1"/>
         </div>
       </div>
     </div>

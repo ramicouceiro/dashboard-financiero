@@ -34,7 +34,7 @@ export default function Sidenav() {
 `;
 
   return (
-    <aside className="w-[15%] h-screen p-6 flex flex-col space-y-4 bg-background">
+    <aside className="w-[15%] h-screen p-6 flex flex-col space-y-4 bg-background xl:flex md:hidden">
       <div className="mb-8 flex justify-center">
         <Image src="/logo.png" alt="Logo" width={100} height={100} />
       </div>
