@@ -1,4 +1,4 @@
-import { PlaneIcon, UtensilsIcon, CarIcon, PackageIcon } from "lucide-react";
+import { PlaneIcon, UtensilsIcon, CarIcon } from "lucide-react";
 import DashboardCard from "./DashboardCard";
 
 interface DashboardCardProps {
